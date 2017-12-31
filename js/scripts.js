@@ -1,17 +1,9 @@
-/*scripts.js
-Conditional instructions in practice*/
+function getTriangleArea(a, h) {
+    if (a > 0 && h > 0) { return (a*h/2) }  
+    else { return ("Nieprawidłowe dane"); }
+}
 
-var a = 3;
-var b = 6;
-var value = (a * a) - (2 * a * b) + (b * b);
-console.log("Value= " + value);
-
-if (value > 0) {
-    console.log("Wynik dodatni")
-}
-else if (value < 0) {
-    console.log("Wynik ujemny")
-}
-else {
-    console.log("Wynik równy 0")
-}
+console.log(getTriangleArea(10, 6));
+var triangle1Area = getTriangleArea(10, 15);
+var triangle2Area = getTriangleArea(9, 7);
+var triangle3Area = getTriangleArea(12, 4);
